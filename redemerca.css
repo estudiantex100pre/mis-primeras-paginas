@@ -1,0 +1,400 @@
+*{
+	padding: 0 ;
+	margin: 0 ;
+}
+
+.grupo a{
+	display: block;
+	text-decoration: none ;
+	color: rgba(165,167,165,1);
+	line-height:2.5em;
+	font-size: 1.1em;
+
+}
+ .grupo{
+	background: rgba(246,246,246,.8) ;
+	padding: 1em 1em .0em;
+	box-shadow: 0px 1px 2px rgba(178,178,178,.4); 
+
+}
+ .caja-titulo {
+	width: 43% ;
+	background: url(https://www.redemerca.com/Content/img/Redemerca/LogoRedemerca.png);
+	background-size: contain ; 
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	height: 50px ;
+	margin:  auto  ;
+	padding-right: 6px;
+}
+.caja-titulo a{
+	width: 100% ;
+	height: 100%;
+}
+
+ .marco{
+	border: 1px solid rgba(215,219,222,.7);
+	display: block;
+	width: 30px;
+	padding: .2em .7em .2em .6em ;
+	border-radius: 3px; ;
+	position: absolute; 
+	top: .6em;
+	left: 1.4em ;
+	cursor: pointer; 
+}
+
+.border-naranja {
+	box-shadow:  .8px .8px 2px rgba(255,117,0, 1), 
+	-.8px -.8px 2px rgba(255,117,0, 1) ;
+}
+
+.menu {
+	max-height: 0px;  
+	overflow: hidden;
+/*	transition: all 1s ease ;*/
+}
+
+.menu-principal {
+	margin-left: .4em ;
+	list-style-type: none ;
+	margin-top: -10px; 
+}
+.sub-menu{
+	max-height: 0px; 
+	overflow: hidden;
+	background:#fff; 
+	list-style-type: none ;
+	padding-left:3.3em ;
+	border-radius: 5px;
+	width: 74% ;  
+
+}
+.sub-menu a{
+	color: #000 ; 
+	line-height: 1.7em;
+}
+.menu-abierto {
+	overflow: visible;
+	max-height: 500px;
+}
+
+.iniciar-seccion  {
+	margin-left: 1.4em; 
+
+}
+.iniciar-seccion a{
+	display: inline-block;
+	color: #007bff ;
+}
+.iniciar-seccion span + a:hover{
+	text-decoration: underline;
+}
+.boton-azul {
+	background: #007bff ; 
+	padding: .4em ;
+	border-radius: 5px;
+}
+.boton-azul a{
+	color: #fff ;
+	font-size: 1em;
+}
+.iniciar-seccion .boton-azul:hover{
+	background: #2570C2;
+}
+.boton-azul a:before{
+	content: "" ;
+	display: inline-block;
+	width: 17px ; 
+	height: 18px;
+	margin-bottom: -3px;
+	background: url(img/iniciar-seccion.ico);	
+	background-size: cover;
+	margin-right: 6px;
+}
+
+.ayuda:after {
+	content: "" ;
+	display: inline-block; 
+	border-top: 5.4px solid rgba(71,77,86,.5) ;
+	border-left: 5.4px solid transparent ;
+	border-right: 5.4px solid transparent ;
+}
+
+@media screen and (min-width: 800px){
+
+}
+
+/*fin del header*/
+
+#comprar-hogar-comercio{
+	margin: 1em 1.5em;
+
+}
+#comprar-hogar-comercio .grupo{
+	padding: .6em 1em .6em;
+	border-radius: 5px;
+}
+.input {
+	display: block;
+	color: #fff ;
+	background-color:  #007bff  ;
+	padding: .5em 1.5em ; 
+	font-size: 1em ;
+	margin:1em auto;
+	width: 70% ;
+	border: 0;
+	border-radius: 5px;
+}
+.input:hover {
+	background: #2570C2;
+}
+@media screen and (min-width: 600px){
+	#comprar-hogar-comercio .grupo{
+		display: flex;
+		justify-content: space-around;
+		 padding: .8em;
+		height: 50px;
+	}
+	#comprar-hogar-comercio .input{
+		flex-basis: 30%;
+		height: ;
+		margin: 0 ;
+	}
+}
+/*fin de comprar-comercio-hogar */
+#imagenes{
+	position: relative;
+}
+.imagenes {
+	height: 200px; 
+	width: 83%;
+	margin-left:  8.5%;
+	border-radius: 5px;
+	background: url(img/imangen1.JPG) left top / 102% 100%  ;
+	/*	animation: newimg 15s infinite ; */
+	transition: all 1s ease ;
+	  
+}
+#imagenes :first-child {
+	color: #fff ;
+	background-color:  #007bff  ;
+	padding: .4em .2em ; 
+	border-radius: 5px;
+	border:0;
+	font-size: 1em;
+	position: absolute;
+	z-index:10; 
+	cursor: pointer;
+}
+.opcion1{
+	left: 10%;
+	top: 33%;
+	background: red !important ;
+}
+.opcion2 {
+	left: 9% ;
+	top: 62%;
+}
+.opcion3{
+	left: 66%;
+	bottom: 0%;
+}
+.raya1, .raya2, .raya3 {
+	position: absolute;
+	height: 3px;
+	width: 8% ; 
+	background: rgba(255,255,255, .3);
+	box-shadow:  2px 2px 1px solid  #000 inset ;
+	bottom: 20px;
+	cursor: pointer;
+}
+.raya1{	left: calc(34% );
+}
+.raya2{ left: calc(46%) ; }
+
+.raya3{	left: calc(56%) ; } 
+.rayas{	background: rgba(55,25,255, .8);}
+
+@media screen and (min-width: 800px) {
+		.marco{
+		display: none ;
+	}
+	.caja-titulo{
+		width: 20% ;
+		float: left;
+
+	}
+	.caja-menu	{
+		float: left ;
+		height:50px ;
+		width: 78%;
+	
+	}
+	.menu{		
+		max-height: 100%;
+		height: 50px;
+		overflow: visible;
+		display: flex;
+		justify-content: space-between;
+	
+	}
+	.menu-principal{
+		margin:0;
+	}
+	.menu-principal :first-child{
+		padding: 0;
+	}
+	.menu-principal li{
+		display: inline-block;
+		padding-left: 1em;
+	}
+	.sub-menu{
+		display: none ;
+	}
+
+	.menu-principal a{
+	line-height: 30px;
+	font-size: 17px;		
+	}
+	#header .grupo{
+		overflow: hidden;
+		padding: .8em 3em;
+	}
+
+	.imagenes{
+		height: 400px;
+	}
+
+}
+
+/*@keyframes newimg{
+	30%{
+		background: url(img/imangen1.JPG) left top /102% 100% no-repeat;
+	}
+	66%{
+		background: url(https://www.redemerca.com/Content/img/Banners/Principal/banner2_1.jpg) left top /102% 100% no-repeat;
+	}
+	100%{
+		background: url(https://www.redemerca.com/Content/img/Banners/Principal/banner3_1.jpg) left top /102% 100% no-repeat;
+	}
+fin de imagenes	*/
+
+#enunciado {
+	color: #007bff; 
+	width: 80% ; 
+	word-wrap: break-word;
+	margin: 2em auto ;
+
+}
+
+.borrar {
+	color: rgba(0,0,0,0);
+/*	text-shadow: 0px 0px 20px rgba(80,255,255,1), 0px 0px 20px rgba(100,255,255,1), 0px 0px 20px rgba(255,255,0,1), 0px 0px 20px rgba(255,255,0,1), 0px 0px 20px rgba(255,255,0,1);
+*/	transition: all .5s linear ;
+}
+pre{display: inline; font-family: "Times New Roman", Times, serif ;}
+
+/* fin de enunciado*/
+#redes-sociales {
+	width: 70% ;
+	margin: 0 auto 1.2em;
+	height: 40px ;
+	display: flex;
+	justify-content: center;
+
+}
+#redes-sociales div{
+	flex-basis: 10% ; padding: 0 .2em;
+	cursor: pointer;
+}
+.instagram{
+	background: url(img/instagram.ico) left top / contain no-repeat;
+}
+.youtube {
+	background: url(img/youtube.ico) left top / contain no-repeat;
+}
+.pajaro {
+	background: url(img/pjaro.ico) left top / contain no-repeat;
+}
+.whatsapp {
+	background: url(img/whatsapp.ico) left top / contain no-repeat;
+}
+
+/* fin de redes sociales */
+
+#secciones, .datos-empresa {
+	color: rgba(164,167,169,1);
+	font-size: 1.1em;
+	width: 80% ;
+	margin: 0 auto 1em ;
+}
+#secciones img { display: block;
+	margin: auto ;  
+	padding: .4em 0 1em;
+}
+#secciones p {
+	word-spacing: .2em ;
+}
+#secciones h1 {
+	text-align: center;
+	color: rgba(53,53,53, 1);
+	font-weight: 100 ;
+}
+#secciones .grupo {
+	padding-bottom: .2em;
+}
+
+@media screen and (min-width: 800px) {
+	#secciones {
+		width: 90% ;
+	}
+	#secciones .grupo {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#secciones article{
+		flex-basis: 30% ;
+		text-align: center;
+	}
+
+	.juntar {
+		display: flex;
+		justify-content: space-around;
+		margin: 2.5em auto 1.7em;
+		width: 90%; 
+	}
+	#enunciado{
+		width: 52% ; 
+		margin: 0em;
+		padding: 0;
+		height: 80px;
+		font-size: 1.3em;
+	}
+	#redes-sociales {
+		width: 40% ; 
+		margin: 0; 
+		padding:0;
+		height: 80px ;
+		justify-content: space-between;
+	}
+	#redes-sociales div{
+		flex-basis: 20% ;
+	}
+
+}
+
+.datos-empresa{
+	text-align: justify;
+	line-height: 1.5 ;
+	font-size: .9em;
+}
+.datos-empresa :first-child{
+	text-indent: 1em;
+	font-weight: 100 ; 
+	color:  rgba(53,53,53, 1);
+	font-style: initial;
+	border-top:1px solid rgba(164,167,169,.5);
+	padding-top: .3em ; 
+}

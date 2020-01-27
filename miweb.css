@@ -1,0 +1,176 @@
+
+body { font-size: 0.9em ;
+	color: #000 ;
+	text-align: justify;
+}
+header {
+	height: 95px ;
+	background: url(imagenes/bloquesoscuro.JPG);
+	padding-top: 35px ; 
+}
+header h1 { display: inline;
+	text-decoration: underline;
+	color: #fff ;
+	font-size: 3em;
+	margin-left: 50px;
+}
+header span {
+	float: right; clear: right;
+	color: #ff9;
+	padding-top: 22px; 
+	
+}
+nav {
+	background: #253575 ;
+	font-size: 1.2em;
+}
+nav ul { 
+	margin: 0; 	
+	list-style: none ;	
+	padding-left: 0px; 
+}
+nav > ul  {
+	padding-left: 30px;
+	padding-top: 10px;
+	display: table ;
+}
+
+nav ul li a{
+	color: #B5C4E3;
+	text-decoration: none ;
+	display: block;
+	padding: .6em .4em .4em ;
+	transition: .7s ;
+}
+nav ul li a:hover {
+	background:  #31479B ;
+}
+nav ul li a:active { 
+	background: #fff ;
+	color: #FF9000 ;
+}
+nav.menu > ul > li {	
+	float: left;
+	margin-left:6px; 
+	background: #7985CB ;
+}
+nav li  { position: relative;
+	line-height: 1.5em;
+	text-align: center;
+}
+nav li ul {
+	position: absolute;
+
+}
+nav li li {
+	width: 200px ; 
+	overflow: hidden;
+	max-height: 0 ;
+	background: #A3AAD2;
+}
+li:hover > ul > li  {
+	overflow: visible;
+	max-height: 50px;
+	transition: .8s ;
+}
+
+nav > ul > li > ul {
+	top: 100% ;
+}
+nav ul ul ul {
+	left: 100%;
+	top: 0% ;
+}
+
+section { 
+	overflow: hidden; 
+	color: #3860AF ;
+	background: #ECF2FF ;
+}
+article { width: 75%; float: left;
+	background: #E5EDFC ;
+	
+	border-top-right-radius: 15px;
+	border-top-left-radius:15px;
+}
+article h1 {
+	text-decoration: underline;
+	background: #DEE0EB ;
+	padding: 1em ;
+	margin-bottom: 0 ;
+
+}
+
+article div {
+	width: 95% ;
+	background: #FFF ;
+	padding: 1em ;
+	margin-left: 10px; 
+}
+
+article div span { background: url(imagenes/sprite/spritemiweb.PNG) ;
+text-decoration: underline; color: blue ;padding-left: 22px;
+margin-left:25px; 
+} 
+.sprite1 { 
+	background-position: 0 -19px; 
+	
+}
+.sprite2 {
+	background-position: 0 -39px ; 
+}
+
+article > p {
+	padding: 0 20px ;
+}
+article > cite { float: right;clear: right; margin-right: 60px }
+
+section article:nth-child(2) {
+	margin-top: 20px;
+}
+
+
+aside {	margin-left:75% ;
+	background: #A8BDE8 ; 
+	border: 1px solid #E5EDFC ;
+	border-top-left-radius: 15px ;
+	border-top-right-radius:15px ;
+
+ }
+
+aside h1 {
+	text-decoration: underline;
+	background: #658EE1;
+	padding: 1em ;
+}
+
+aside div { 
+	
+}
+
+.correo {height: 80px ; width: 80px ;
+	background: url(imagenes/sprite/correo.ico);
+}
+aside div {display: inline-block;}
+aside div + p {
+	margin-top: 0 ;
+}
+
+aside div p {
+	margin: .4em ;
+}
+p.bolt { clear: left; }
+
+aside nav {
+	background: none ; 
+}
+aside > nav > ul > li {
+	list-style-type: decimal; 
+}
+aside li { position: static; }
+aside nav li a{
+	color: #3860AF ; 
+}
+aside nav li  a:hover {
+	background: #FFF ;
+}
